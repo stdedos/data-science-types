@@ -12,10 +12,10 @@ gen_pyi()
 setup(
     name="data-science-types",
     version="0.3.0.dev1",
-    url="https://github.com/predictive-analytics-lab/data-science-types",
+    url="https://github.com/stdedos/data-science-types",
     project_urls={
-        "Bug Tracker": "https://github.com/predictive-analytics-lab/data-science-types/issues/",
-        "Source Code": "https://github.com/predictive-analytics-lab/data-science-types",
+        "Bug Tracker": "https://github.com/stdedos/data-science-types/issues/",
+        "Source Code": "https://github.com/stdedos/data-science-types",
     },
     author="PAL",
     description="Type stubs for Python machine learning libraries",
