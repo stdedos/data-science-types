@@ -11,7 +11,7 @@ gen_pyi()
 
 setup(
     name="data-science-types",
-    version="0.3.0.dev1",
+    version="0.4.0.dev1",
     url="https://github.com/stdedos/data-science-types",
     project_urls={
         "Bug Tracker": "https://github.com/stdedos/data-science-types/issues/",
@@ -40,29 +40,9 @@ setup(
             "text.pyi",
             "transforms.pyi",
         ],
-        "numpy-stubs": ["__init__.pyi", "linalg.pyi", "ma.pyi", "random.pyi", "testing.pyi"],
-        "pandas-stubs": ["__init__.pyi", "testing.pyi"],
-        "pandas-stubs.core": [
-            "__init__.pyi",
-            "frame.pyi",
-            "indexing.pyi",
-            "series.pyi",
-            "strings.pyi",
-        ],
-        "pandas-stubs.core.arrays": ["__init__.pyi", "base.pyi", "integer.pyi", "masked.pyi"],
-        "pandas-stubs.core.dtypes": ["__init__.pyi", "base.pyi"],
-        "pandas-stubs.core.groupby": ["__init__.pyi", "generic.pyi"],
-        "pandas-stubs.core.indexes": ["__init__.pyi", "base.pyi", "frozen.pyi", "multi.pyi"],
     },
     packages=[
         "matplotlib-stubs",
-        "numpy-stubs",
-        "pandas-stubs",
-        "pandas-stubs.core",
-        "pandas-stubs.core.arrays",
-        "pandas-stubs.core.dtypes",
-        "pandas-stubs.core.groupby",
-        "pandas-stubs.core.indexes",
     ],
     python_requires=">=3.6",
     # use `pip install data-science-types[dev]` to install development packages
@@ -73,7 +53,6 @@ setup(
             "flake8-pyi",
             "matplotlib",
             "mypy==0.770",
-            "numpy",
             "pandas",
             "pytest",
         ]
