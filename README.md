@@ -1,21 +1,18 @@
-# Mypy type stubs for pandas, and Matplotlib
+# Mypy type stubs for Matplotlib
 
 [![Join the chat at https://gitter.im/data-science-types/community](https://badges.gitter.im/data-science-types/community.svg)](https://gitter.im/data-science-types/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 ⚠️  **this project has mostly stopped development** ⚠️
 
-The pandas team is in the process of integrating type stubs into their codebase,
-and we don't see the point of competing with them.
-
 ---
 
 This is a [PEP-561][pep-561]-compliant stub-only package
-which provides type information for [matplotlib][matplotlib], and [pandas][pandas].
+which provides type information for [matplotlib][matplotlib].
 The [mypy][mypy] type checker (or pytype or PyCharm) can [recognize][mypy-docs] the types in these packages by installing this package.
 
 ### NOTE: This is a work in progress
 
-Many functions are already typed, but a *lot* is still missing (pandas is a *huge* library).
+Many functions are already typed, and things can still be missing.
 Chances are, you will see a message from Mypy claiming that a function does not exist when it does exist.
 If you encounter missing functions, we would be delighted for you to send a PR.
 If you are unsure of how to type a function, we can discuss it.
@@ -117,7 +114,6 @@ flake8 *-stubs
 
 [pep-561]: https://www.python.org/dev/peps/pep-0561/
 [matplotlib]: https://matplotlib.org
-[pandas]: https://pandas.pydata.org
 [mypy]: http://www.mypy-lang.org/
 [mypy-docs]: https://mypy.readthedocs.io/en/latest/installed_packages.html
 [black]: https://github.com/psf/black
