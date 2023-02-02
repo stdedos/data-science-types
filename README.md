@@ -19,11 +19,8 @@ If you are unsure of how to type a function, I can discuss it.
 
 ## Installing
 
-You can get this package from PyPI:
-
-```bash
-pip install data-science-types
-```
+You can get this package only from Github, following the instructions below
+Publishing to PyPi _may_ follow.
 
 To get the most up-to-date version, install it directly from GitHub:
 
