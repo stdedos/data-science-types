@@ -51,10 +51,18 @@ setup(
             "black",
             "flake8",
             "flake8-pyi",
+            "mypy",
+            "test",
+        ],
+        "test": [
             "matplotlib",
-            "mypy==0.770",
-            "pandas",
+            "pandas<1.2",
             "pytest",
+            "kiwisolver>=1.3.1",
+        ],
+        "publish": [
+            "GitPython",
+            "twine",
         ]
     },
     classifiers=[  # classifiers can be found here: https://pypi.org/classifiers/
