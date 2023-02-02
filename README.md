@@ -1,12 +1,6 @@
 # Mypy type stubs for Matplotlib
 
-[![Join the chat at https://gitter.im/data-science-types/community](https://badges.gitter.im/data-science-types/community.svg)](https://gitter.im/data-science-types/community)
-
-⚠️  **this project has mostly stopped development** ⚠️
-
----
-
-This is a [PEP-561][pep-561]-compliant stub-only package
+This is a [PEP-561][pep-561]-compliant stub-only package,
 which provides type information for [matplotlib][matplotlib].
 The [mypy][mypy] type checker (or pytype or PyCharm) can [recognize][mypy-docs] the types in these packages by installing this package.
 
@@ -19,11 +13,8 @@ If you are unsure of how to type a function, I can discuss it.
 
 ## Installing
 
-You can get this package from PyPI:
-
-```bash
-pip install data-science-types
-```
+You can get this package only from Github, following the instructions below
+Publishing to PyPi _may_ follow.
 
 To get the most up-to-date version, install it directly from GitHub:
 
@@ -58,7 +49,7 @@ This will also install NumPy, pandas, and Matplotlib to be able to run the tests
 
 We include a script for running the CI checks that are triggered when a PR is opened.
 To test these out locally, you need to install the type stubs in your environment.
-Typically, you would do this with
+Typically, you would do this with:
 
 ```bash
 pip install -e .
@@ -76,7 +67,7 @@ but `check_all.sh` should be easier to use.
 ### Checking compliance with `mypy`
 
 The settings for `mypy` are specified in the `mypy.ini` file in the repository.
-Just running
+Just running:
 
 ```bash
 mypy tests
@@ -88,7 +79,7 @@ We enforce 0 `mypy` errors.
 ### Formatting with black
 
 We use [Black][black] to format the stub files.
-First, install `black` and then run
+First, install `black` and then run:
 
 ```bash
 black .
