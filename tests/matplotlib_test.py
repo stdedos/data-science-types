@@ -26,7 +26,7 @@ plt.xticks(ticks=np.array([0, 1]), labels=np.array(["foo", "bar"]))
 plt.xticks(ticks=pd.Series([0, 1]), labels=pd.Series(["foo", "bar"]))
 plt.xlim(0, 1)
 plt.ylim(0, 1)
-plt.fill_between((0, 1), y1=(0, 1), y2=(1, 1), where=[True], interpolate=False, data=[])
+plt.fill_between((0, 1), y1=(0, 1), y2=(1, 1), where=[True, True], interpolate=False, data=[])
 
 
 def test_data_types() -> None:
